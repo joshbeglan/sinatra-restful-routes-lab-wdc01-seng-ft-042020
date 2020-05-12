@@ -1,0 +1,15 @@
+<h1> Home Page </h1>
+
+<ul>
+
+    <% recipe_array = Recipe.all %>
+
+    <%  recipe_array.each do |recipe| %>
+
+        <li>
+            <%= recipe.name %>
+        </li>
+
+    <% end %>
+
+</ul>
